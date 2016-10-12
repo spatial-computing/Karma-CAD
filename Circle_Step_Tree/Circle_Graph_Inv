@@ -1,11 +1,12 @@
 digraph {
 
 	ordering=out;
-	ranksep=.4;
+	ranksep=4;
 	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
 		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
 	edge [arrowsize=.5, color="black", style="bold"]
 rankdir=LR
+splines=false
 
   n0 [label="EXCHANGE_FILE"];
   n1 [label="HEADER_SECTION"];
