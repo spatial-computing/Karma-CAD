@@ -1,0 +1,125 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
+FILE_NAME('/home/scuser/workspace/square_freecad.step',  '2016-10-12T15:37:42',('Author'),(''),  'Open CASCADE STEP processor 6.8','FreeCAD','Unknown');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));
+
+
+#1 = APPLICATION_PROTOCOL_DEFINITION('committee draft',  'automotive_design',1997,#2);
+  #2 = APPLICATION_CONTEXT(  'core data for automotive mechanical design processes');
+
+
+#3 = SHAPE_DEFINITION_REPRESENTATION(#4,#10);
+  #4 = PRODUCT_DEFINITION_SHAPE('','',#5);
+  #10 = GEOMETRICALLY_BOUNDED_WIREFRAME_SHAPE_REPRESENTATION('',(#11,#15),  #44);
+    #11 = AXIS2_PLACEMENT_3D('',#12,#13,#14);
+      #12 = CARTESIAN_POINT('',(0.,0.,0.));
+      #13 = DIRECTION('',(0.,0.,1.));
+      #14 = DIRECTION('',(1.,0.,-0.));
+    #15 = GEOMETRIC_CURVE_SET('',(#16,#23,#30,#37));
+      #16 = TRIMMED_CURVE('',#17,(#21,PARAMETER_VALUE(0.)),(#22,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+        #17 = LINE('',#18,#19);
+          #18 = CARTESIAN_POINT('',(-10.,10.,0.));
+          #19 = VECTOR('',#20,1.);
+            #20 = DIRECTION('',(1.,0.,0.));
+        #21 = CARTESIAN_POINT('',(-10.,10.,0.));
+        #22 = CARTESIAN_POINT('',(10.,10.,0.));
+      #23 = TRIMMED_CURVE('',#24,(#28,PARAMETER_VALUE(0.)),(#29,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+        #24 = LINE('',#25,#26);
+          #25 = CARTESIAN_POINT('',(10.,10.,0.));
+          #26 = VECTOR('',#27,1.);
+            #27 = DIRECTION('',(0.,-1.,0.));
+        #28 = CARTESIAN_POINT('',(10.,10.,0.));
+        #29 = CARTESIAN_POINT('',(10.,-10.,0.));
+      #30 = TRIMMED_CURVE('',#31,(#35,PARAMETER_VALUE(0.)),(#36,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+        #31 = LINE('',#32,#33);
+          #32 = CARTESIAN_POINT('',(10.,-10.,0.));
+          #33 = VECTOR('',#34,1.);
+            #34 = DIRECTION('',(-1.,0.,0.));
+        #35 = CARTESIAN_POINT('',(10.,-10.,0.));
+        #36 = CARTESIAN_POINT('',(-10.,-10.,0.));
+      #37 = TRIMMED_CURVE('',#38,(#42,PARAMETER_VALUE(0.)),(#43,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+        #38 = LINE('',#39,#40);
+          #39 = CARTESIAN_POINT('',(-10.,-10.,0.));
+          #40 = VECTOR('',#41,1.);
+            #41 = DIRECTION('',(0.,1.,0.));
+        #42 = CARTESIAN_POINT('',(-10.,-10.,0.));
+        #43 = CARTESIAN_POINT('',(-10.,10.,0.));
+    #44 = ( GEOMETRIC_REPRESENTATION_CONTEXT(3) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT((#48)) GLOBAL_UNIT_ASSIGNED_CONTEXT((#45,#46,#47)
+         ) REPRESENTATION_CONTEXT('Context #1',  '3D Context with UNIT and UNCERTAINTY') );
+
+
+#4 = PRODUCT_DEFINITION_SHAPE('','',#5);
+  #5 = PRODUCT_DEFINITION('design','',#6,#9);
+    #6 = PRODUCT_DEFINITION_FORMATION('','',#7);
+      #7 = PRODUCT('Sketch','Sketch','',(#8));
+        #8 = MECHANICAL_CONTEXT('',#2,'mechanical');
+          #2 = APPLICATION_CONTEXT(  'core data for automotive mechanical design processes');
+    #9 = PRODUCT_DEFINITION_CONTEXT('part definition',#2,'design');
+      #2 = APPLICATION_CONTEXT(  'core data for automotive mechanical design processes');
+
+
+#5 = PRODUCT_DEFINITION('design','',#6,#9);
+  #6 = PRODUCT_DEFINITION_FORMATION('','',#7);
+    #7 = PRODUCT('Sketch','Sketch','',(#8));
+      #8 = MECHANICAL_CONTEXT('',#2,'mechanical');
+        #2 = APPLICATION_CONTEXT(  'core data for automotive mechanical design processes');
+  #9 = PRODUCT_DEFINITION_CONTEXT('part definition',#2,'design');
+    #2 = APPLICATION_CONTEXT(  'core data for automotive mechanical design processes');
+
+
+#44 = ( GEOMETRIC_REPRESENTATION_CONTEXT(3) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT((#48)) GLOBAL_UNIT_ASSIGNED_CONTEXT((#45,#46,#47)
+     ) REPRESENTATION_CONTEXT('Context #1',  '3D Context with UNIT and UNCERTAINTY') );
+  #48 = UNCERTAINTY_MEASURE_WITH_UNIT(LENGTH_MEASURE(1.E-07),#45,  'distance_accuracy_value','confusion accuracy');
+    #45 = ( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) );
+  #45 = ( LENGTH_UNIT() NAMED_UNIT(*) SI_UNIT(.MILLI.,.METRE.) );
+  #46 = ( NAMED_UNIT(*) PLANE_ANGLE_UNIT() SI_UNIT($,.RADIAN.) );
+  #47 = ( NAMED_UNIT(*) SI_UNIT($,.STERADIAN.) SOLID_ANGLE_UNIT() );
+
+
+#50 = MECHANICAL_DESIGN_GEOMETRIC_PRESENTATION_REPRESENTATION('',(#51),  #44);
+  #51 = STYLED_ITEM('color',(#52),#15);
+  #44 = ( GEOMETRIC_REPRESENTATION_CONTEXT(3) GLOBAL_UNCERTAINTY_ASSIGNED_CONTEXT((#48)) GLOBAL_UNIT_ASSIGNED_CONTEXT((#45,#46,#47)
+       ) REPRESENTATION_CONTEXT('Context #1',  '3D Context with UNIT and UNCERTAINTY') );
+
+
+#51 = STYLED_ITEM('color',(#52),#15);
+  #52 = PRESENTATION_STYLE_ASSIGNMENT((#53,#59));
+    #53 = SURFACE_STYLE_USAGE(.BOTH.,#54);
+      #54 = SURFACE_SIDE_STYLE('',(#55));
+        #55 = SURFACE_STYLE_FILL_AREA(#56);
+          #56 = FILL_AREA_STYLE('',(#57));
+            #57 = FILL_AREA_STYLE_COLOUR('',#58);
+              #58 = COLOUR_RGB('',0.800000011921,0.800000011921,0.800000011921);
+    #59 = CURVE_STYLE('',#60,POSITIVE_LENGTH_MEASURE(0.1),#58);
+      #60 = DRAUGHTING_PRE_DEFINED_CURVE_FONT('continuous');
+      #58 = COLOUR_RGB('',0.800000011921,0.800000011921,0.800000011921);
+  #15 = GEOMETRIC_CURVE_SET('',(#16,#23,#30,#37));
+    #16 = TRIMMED_CURVE('',#17,(#21,PARAMETER_VALUE(0.)),(#22,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+      #17 = LINE('',#18,#19);
+        #18 = CARTESIAN_POINT('',(-10.,10.,0.));
+        #19 = VECTOR('',#20,1.);
+          #20 = DIRECTION('',(1.,0.,0.));
+      #21 = CARTESIAN_POINT('',(-10.,10.,0.));
+      #22 = CARTESIAN_POINT('',(10.,10.,0.));
+    #23 = TRIMMED_CURVE('',#24,(#28,PARAMETER_VALUE(0.)),(#29,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+      #24 = LINE('',#25,#26);
+        #25 = CARTESIAN_POINT('',(10.,10.,0.));
+        #26 = VECTOR('',#27,1.);
+          #27 = DIRECTION('',(0.,-1.,0.));
+      #28 = CARTESIAN_POINT('',(10.,10.,0.));
+      #29 = CARTESIAN_POINT('',(10.,-10.,0.));
+    #30 = TRIMMED_CURVE('',#31,(#35,PARAMETER_VALUE(0.)),(#36,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+      #31 = LINE('',#32,#33);
+        #32 = CARTESIAN_POINT('',(10.,-10.,0.));
+        #33 = VECTOR('',#34,1.);
+          #34 = DIRECTION('',(-1.,0.,0.));
+      #35 = CARTESIAN_POINT('',(10.,-10.,0.));
+      #36 = CARTESIAN_POINT('',(-10.,-10.,0.));
+    #37 = TRIMMED_CURVE('',#38,(#42,PARAMETER_VALUE(0.)),(#43,    PARAMETER_VALUE(20.)),.T.,.PARAMETER.);
+      #38 = LINE('',#39,#40);
+        #39 = CARTESIAN_POINT('',(-10.,-10.,0.));
+        #40 = VECTOR('',#41,1.);
+          #41 = DIRECTION('',(0.,1.,0.));
+      #42 = CARTESIAN_POINT('',(-10.,-10.,0.));
+      #43 = CARTESIAN_POINT('',(-10.,10.,0.));

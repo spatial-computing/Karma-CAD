@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="duplicate:http://www.nist.gov/OntoSTEP/automotive_design" uri="AutoCAD_Circle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="duplicate:http://www.nist.gov/OntoSTEP/automotive_design" uri="Circle_FreeCAD.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="duplicate:http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477451379585.owl" uri="automotive_design.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="duplicate:http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477451379585.owl" uri="Base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477506362474.owl" uri="FreeCAD_Circle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477506423802.owl" uri="AP214.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477506451139.owl" uri="AutoCAD_Cylinder.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1477509904210" name="http://www.semanticweb.org/aj/ontologies/2016/9/Ontology1477506670316.owl" uri="FreeCAD_Cylinder.owl"/>
+    </group>
+</catalog>
