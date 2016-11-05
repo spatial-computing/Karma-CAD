@@ -8,14 +8,15 @@ import java.util.regex.Pattern;
 
 public class StepFileCleaner {
 
-	public static String clean(FileReader inpFile) throws IOException{
+	public static String clean(String inpFileName) throws IOException{
+		FileReader inpFile = new FileReader(inpFileName);
 		BufferedReader bufferedReader = new BufferedReader(inpFile);
 		String lineFull=null;
 		String line = "";
 		Pattern patternParent = Pattern.compile("^ #\\d+");
 
 		while((line = bufferedReader.readLine())!=null){
-			
+			lineFull+=line;
 		}
 		bufferedReader.close();
 		return lineFull;

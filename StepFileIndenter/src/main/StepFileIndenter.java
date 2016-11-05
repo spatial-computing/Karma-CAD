@@ -20,24 +20,22 @@ import validator.Validate;
 import vo.Part;
 
 public class StepFileIndenter {
-	public static String SolidWorks_Cylinder="Cylinder.step";
-	public static String AUtoCad_Cylinder="Cylinder.stp";
+	public static String SolidWorks_Cylinder="Cylinder_9decRadius.STEP";
+	public static String AUtoCad_Cylinder="AC_Cylinder_9DecRadius.stp";
 	public static	 void main(String[] args){
-	String  inpFileName = SolidWorks_Cylinder;
+	String  inpFileName = AUtoCad_Cylinder;
 		Map<String, String> partsFileMap = new HashMap<String,String>();
 		Map<String,Part> partMap = new HashMap<String,Part>();
 		try {		
-			FileReader inpFile = new FileReader(inpFileName);
-			StepFileCleaner.clean(inpFile);
+		//	FileReader inpFile = new FileReader(inpFileName);
 			
 		//	BufferedReader bufferedReader = new BufferedReader(inpFile);
 			String lineFull="";
 			Pattern patternParent = Pattern.compile("^ #\\d+");
 			Pattern pattern = Pattern.compile("#\\d+");
 			
-			//Single line whole file
-			
-			lineFull = StepFileCleaner.clean(inpFile);
+			//Single line whole file			
+			lineFull = StepFileCleaner.clean(inpFileName);
 			String[] lineArray = lineFull.split(";");		
 		//	while((line = bufferedReader.readLine())!=null){
 			for(int lines=0;lines<lineArray.length;lines++){
