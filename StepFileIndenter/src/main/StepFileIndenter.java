@@ -20,10 +20,13 @@ import validator.Validate;
 import vo.Part;
 
 public class StepFileIndenter {
+	
 	public static String SolidWorks_Cylinder="Cylinder_9decRadius.STEP";
 	public static String AUtoCad_Cylinder="AC_Cylinder_9DecRadius.stp";
 	public static	 void main(String[] args){
-	String  inpFileName = AUtoCad_Cylinder;
+		
+		
+	String  inpFileName = "AutoCAD_ConstantRadius10.stp";
 		Map<String, String> partsFileMap = new HashMap<String,String>();
 		Map<String,Part> partMap = new HashMap<String,Part>();
 		try {		
@@ -31,7 +34,7 @@ public class StepFileIndenter {
 			
 		//	BufferedReader bufferedReader = new BufferedReader(inpFile);
 			String lineFull="";
-			Pattern patternParent = Pattern.compile("^ #\\d+");
+			Pattern patternParent = Pattern.compile("^#\\d+");
 			Pattern pattern = Pattern.compile("#\\d+");
 			
 			//Single line whole file			

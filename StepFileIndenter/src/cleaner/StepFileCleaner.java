@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class StepFileCleaner {
@@ -13,13 +14,26 @@ public class StepFileCleaner {
 		BufferedReader bufferedReader = new BufferedReader(inpFile);
 		String lineFull=null;
 		String line = "";
-		Pattern patternParent = Pattern.compile("^ #\\d+");
+		String formattedContent = "";
+		Pattern patternParent = Pattern.compile("^#\\d+=.*;$",Pattern.MULTILINE+Pattern.DOTALL);
+		int c;
+		while(-1 !=(c = bufferedReader.read())){
 
-		while((line = bufferedReader.readLine())!=null){
-			lineFull+=line;
+			if(c=='#'){
+				formattedContent+=(char)c;
+				while(';' !=(c = bufferedReader.read())){
+					//c = (char)bufferedReader.read();
+					if('\n'==(char)c || ('\r'==(char)c)){
+						continue ;
+					}
+					formattedContent+=(char)c;
+				}
+				formattedContent+=(char)c;
+			}
 		}
+		
 		bufferedReader.close();
-		return lineFull;
+		return formattedContent;
 
 	}
 	
